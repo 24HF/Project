@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exam.ExamActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/bg"
+        android:scaleType="fitXY"
+        />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginRight="0dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/shape_form"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:orientation="vertical"
+        android:layout_marginTop="205dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answerA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/shape_form"/>
+            <RadioButton
+                android:id="@+id/answerB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/shape_form"/>
+            <RadioButton
+                android:id="@+id/answerC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/shape_form"/>
+            <RadioButton
+                android:id="@+id/answerD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/shape_form"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/explanation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/shape_form"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="650dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp">
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="上一题"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_btn"
+            />
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="下一题"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/shape_btn"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
